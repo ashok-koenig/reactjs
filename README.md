@@ -1,1 +1,1 @@
-"# React JS - Course Demo Projects" 
+# React JS - Course Demo Projects
