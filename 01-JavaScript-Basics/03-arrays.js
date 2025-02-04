@@ -12,3 +12,12 @@ marks[1]= 100
 
 // Display all the array values
 console.log(marks)
+
+// Iterate over the array values - find the sum of all the marks
+
+var sum = 0;
+for(let value of marks){
+    sum = sum + value
+}
+
+console.log("Total marks: "+ sum)
