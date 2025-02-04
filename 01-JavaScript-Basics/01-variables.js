@@ -8,8 +8,6 @@ console.log(globalVariable);
 
 globalVariable = "Modified global variable"
 
-
-
 // Simple block
 {
     console.log(globalVariable);
@@ -18,6 +16,12 @@ globalVariable = "Modified global variable"
 
     blockVariable = "Modified block variable"
     console.log(blockVariable)
+
+    const constantVariable = "This is constant variable"
+    console.log(constantVariable)
+
+    // constantVariable = "Unable to change the constant variable" //Not possible
 }
 
 //console.log(blockVariable) // Not possible
+//console.log(constantVariable) // Not possible
