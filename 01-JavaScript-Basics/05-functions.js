@@ -17,10 +17,12 @@ add(10, 20)
 
 // Function with return value
 function sub(num1, num2){
-    let result = num1 - num2
-    return result;
+    // let result = num1 - num2
+    // return result;
+    return num1 - num2
 }
 
 // Calling a function with parameter and recieve the return value
-let diff = sub(100, 50)
-console.log("Difference is "+ diff)
+// let diff = sub(100, 50)
+// console.log("Difference is "+ diff)
+console.log("Difference is "+ sub(100, 50))
