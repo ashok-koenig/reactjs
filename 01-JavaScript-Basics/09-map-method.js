@@ -18,3 +18,13 @@ console.log(newFriends)
 //     // console.log(friend.toUpperCase())
 //     console.log(convertName(friend))
 // }
+
+const prices = [800, 300, 500, 200]
+
+const discount = 10
+
+console.log("Actual Prices: ", prices)
+
+const discountedPrices = prices.map((price)=> price - discount)
+
+console.log("Discounted Price: ", discountedPrices)
