@@ -16,3 +16,10 @@ person["isStudent"]=true
 
 // Display all object properies 
 console.log(person)
+
+// person = "John" // Not possible since person object is created with const
+
+// for-in loop to iterate over the properies in an object
+for (const key in person) {
+    console.log(key, " - ", person[key])
+}
