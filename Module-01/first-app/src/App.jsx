@@ -5,6 +5,8 @@ import './App.css'
 
 function App() {  
 
+  const greet = (name) => <h1>Welcome, {name}!</h1>
+
   const message = "Hello, John"
   const element = <h2>Welcome to JSX</h2>
   const price = 100
@@ -20,6 +22,7 @@ function App() {
   return (
     <>
        <h1>Welcome to React App</h1>
+       {greet("Peter")}
        <hr />
         <p>Learning React is simple</p>
         <h2>{message}</h2>
