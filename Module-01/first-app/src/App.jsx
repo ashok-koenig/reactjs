@@ -10,6 +10,13 @@ function App() {
   const price = 100
   const quantity = 5 
 
+  const person = {
+    firstName: "John",
+    lastName: "Smith",
+    age: 25,
+    email: "john@email.com"
+  }
+
   return (
     <>
        <h1>Welcome to React App</h1>
@@ -21,6 +28,11 @@ function App() {
         <h3>Price: {price}</h3>
         <h3>Quantity: {quantity}</h3>
         <h3>Total Cost: {price * quantity}</h3>
+        <hr/>
+        <h3>Person Details</h3>
+        <h5>Name: {person.firstName} {person.lastName}</h5>
+        <h5>Age: {person.age}</h5>
+        <h5>Email: {person.email}</h5>
     </>  
   )
 }
