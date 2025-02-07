@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Welcome(props) {
+ // De-Structuring props while receiving in function component
+function Welcome({name, age}) { 
   return (
     <div>
-        <h2>Welcome {props.name}, age is {props.age}</h2>
+        <h2>Welcome {name}, age is {age}</h2>
     </div>
   )
 }

@@ -3,16 +3,21 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Welcome from './components/Welcome'
+import Product from './components/Product'
 
 function App() { 
 
   const peterAge = 26
+
+  const laptopDetail = {title: "Laptop", price: 27878}
   return (
     <>
       <h1>Working with Props</h1>
       <Welcome name="John" age="24"/>
       <Welcome name="Smith" age={25}/>
       <Welcome name="Peter" age={peterAge}/>
+      <hr />
+      <Product productDetail={laptopDetail}/>
     </>
   )
 }
