@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Counter() {
 
-    let count = 0;
+    // console.log(useState(0))
+    const [count, setCount] = useState(0)
+
+    // let count = 0;
     const handleClick = ()=>{
-        count ++;
-        alert("Increment Button clicked, Count: "+ count)
+        setCount((count)=> count+1)
+        // count ++;
+        // alert("Increment Button clicked, Count: "+ count)
     }
 
   return (
