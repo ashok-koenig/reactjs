@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Counter from './components/Counter'
 import NameDemo from './components/NameDemo'
+import SyntheticDemo from './components/SyntheticDemo'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
      <h1>State Management and Event Handling</h1>
      <Counter />
      <NameDemo />
+     <SyntheticDemo />
     </>
   )
 }
