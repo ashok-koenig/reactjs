@@ -7,13 +7,16 @@ function Counter() {
 
     // let count = 0;
     const handleClick = ()=>{
-        setCount((count)=> count+1)
+      // function call with new value to the state variable
+      setCount(count + 1)
+        // setCount((count)=> count+1)
         // count ++;
         // alert("Increment Button clicked, Count: "+ count)
     }
 
   return (
     <div>
+      <h1>State using Number</h1>
         <h3>Current Count: {count}</h3>
         <button onClick={handleClick}>Increment</button>
     </div>
