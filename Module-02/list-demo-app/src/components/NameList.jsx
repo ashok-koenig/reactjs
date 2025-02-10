@@ -12,7 +12,7 @@ function NameList() {
             <li>{names[3]}</li>
         </ol> */}
         <ol>
-            {names.map((name)=> <li>{name}</li>)}
+            {names.map((name, index)=> <li key={index}>{name}</li>)}
         </ol>
     </div>
   )
