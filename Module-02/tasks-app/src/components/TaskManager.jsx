@@ -15,6 +15,23 @@ function TaskManager() {
         setTasks([...tasks, newTask]) // Add new task to the tasks
         setNewTaskTitle('') // reset the new task title input field to empty
     }
+
+    const handleDeleteTask = (taskId) => {
+        setTasks(tasks.filter((task)=> task.id != taskId))
+    }
+
+    // Toggle the completion status
+    const handleTaskStatus = (taskId) => {
+        // const tasksCopy = [...tasks]
+        // for(let index=0; index<tasksCopy.length; index++){
+        //     if(tasksCopy[index].id==taskId){
+        //         tasksCopy[index].completed = !tasksCopy[index].completed
+        //     }            
+        // }
+        // setTasks(tasksCopy)
+        setTasks(tasks.map((task)=> task.id==taskId ? {...task, completed: !task.completed} : task))
+    }
+
   return (
     <div>
         <h2>Add New Task</h2>
@@ -25,6 +42,9 @@ function TaskManager() {
         <ul>
             {tasks.map((item)=> <li key={item.id}>
                                     {item.title} - {item.completed? "Completed": "Incomplete"}
+
+                                    <button onClick={()=>handleTaskStatus(item.id)}>Toggle complete</button>
+                                    <button onClick={()=>handleDeleteTask(item.id)}>Delete</button>
                                 </li>)}
         </ul>
     </div>
