@@ -3,6 +3,18 @@ import React, { useState } from 'react'
 function RegisterFrom() {
 
     const [formData, setFromData] = useState({name:'', email:'', gender:'', course: ''})
+    const [errors, setErrors] = useState({})
+
+    const validateForm = () => {
+        const currentErrors = {}
+        if(!formData.name) { currentErrors.name = "Name is required" }
+        if(!formData.email) { currentErrors.email = "Email is required" }
+        if(!formData.gender) { currentErrors.gender = "Gender is required" }
+        if(!formData.course) { currentErrors.course = "Course is required" }
+        console.log(currentErrors)
+        setErrors(currentErrors)
+        return Object.keys(currentErrors).length == 0
+    }
 
     const handleInputChange = (event) =>{
         const {name, value} = event.target
@@ -11,7 +23,11 @@ function RegisterFrom() {
 
     const handleSubmit = (event) =>{
         event.preventDefault()  // Prevent the default form submittion to current url or action urls(if specified)
-        console.log(formData)
+        if(validateForm()){
+            console.log("Validation success,",formData)
+        }else{
+            console.log("Validation failed")
+        }       
     }
 
   return (
