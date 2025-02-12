@@ -36,13 +36,16 @@ function RegisterFrom() {
         <form onSubmit={handleSubmit}>
             <div>
                 Name: <input type='text' name="name" value={formData.name} onChange={handleInputChange}/>
+                {errors.name && <span className='error'>{errors.name}</span>}
             </div>
             <div>
                 Email: <input type='email' name="email" value={formData.email} onChange={handleInputChange}/>
+                {errors.email && <span className='error'>{errors.email}</span>}
             </div>
             <div>
                 Gender: <input type='radio' name='gender' value="male" checked={formData.gender == 'male'} onChange={handleInputChange}/> Male
                         <input type='radio' name='gender' value="female" checked={formData.gender == 'female'} onChange={handleInputChange}/> Female
+                {errors.gender && <span className='error'>{errors.gender}</span>}
             </div>
             <div>
                 Course: <select name='course' value={formData.course} onChange={handleInputChange}>
@@ -51,6 +54,7 @@ function RegisterFrom() {
                             <option value="JavaScript">JavaScript</option>
                             <option value="React">React</option>
                         </select>
+                {errors.course && <span className='error'>{errors.course}</span>}
             </div>
             <div>
                 <button type='submit'>Register</button>
