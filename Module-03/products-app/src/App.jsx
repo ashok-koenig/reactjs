@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import AddProduct from './components/AddProduct'
+import ListProduct from './components/ListProduct'
 
 function App() {  
 
@@ -15,6 +17,8 @@ function App() {
   return (
     <>
      <h1>Product Management App</h1>
+     <AddProduct handleAddProduct={handleAddProduct}/>
+     <ListProduct products={products}/>
     </>
   )
 }
