@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { createContext, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import AddProduct from './components/AddProduct'
 import ListProduct from './components/ListProduct'
+
+export const Offer = createContext(0)
 
 function App() {  
 
@@ -14,11 +16,20 @@ function App() {
     setProducts([...products, newProduct])
   }
 
+  const [offerPercentage, setOfferPercentage] = useState(0)
+
   return (
     <>
      <h1>Product Management App</h1>
+     <div>
+      Set Offer Percentage: 
+      <input type='number' value={offerPercentage} onChange={(event) => setOfferPercentage(event.target.value)} />
+     </div>
      <AddProduct handleAddProduct={handleAddProduct}/>
-     <ListProduct products={products}/>
+     <Offer.Provider value={offerPercentage}>
+        <ListProduct products={products}/>
+     </Offer.Provider>
+     
     </>
   )
 }
