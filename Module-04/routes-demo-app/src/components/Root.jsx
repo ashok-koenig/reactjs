@@ -7,7 +7,8 @@ function Root() {
         <h1>Working with React Router</h1>
         <hr/>
         <Link to='/'>Home</Link> | 
-        <Link to='/about'>About</Link>
+        <Link to='/about'>About</Link> |
+        <Link to='/blogs'>Blogs</Link>
         <hr/>
         <Outlet />
     </div>
