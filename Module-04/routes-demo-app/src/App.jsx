@@ -7,6 +7,7 @@ import About from './components/About'
 import Blogs from './components/blogs/Blogs'
 import ListBlogs from './components/blogs/ListBlogs'
 import AddBlog from './components/blogs/AddBlog'
+import BlogPost from './components/blogs/BlogPost'
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,8 @@ const router = createBrowserRouter([
         element: <Blogs />, 
         children: [
           {index: true, element: <ListBlogs />},
-          {path: 'add', element: <AddBlog />}
+          {path: ':blogId', element: <BlogPost />},
+          {path: 'add', element: <AddBlog />},          
         ]
       }
     ]
