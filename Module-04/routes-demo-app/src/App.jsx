@@ -8,6 +8,7 @@ import Blogs from './components/blogs/Blogs'
 import ListBlogs from './components/blogs/ListBlogs'
 import AddBlog from './components/blogs/AddBlog'
 import BlogPost from './components/blogs/BlogPost'
+import Payment from './components/Payment'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
       {index: true, element:<Home />},
       // {path: 'home', element: <Home />},
       {path: 'about', element: <About />},
+      {path: 'payment', element: <Payment />},
       {
         path: 'blogs', 
         element: <Blogs />, 
