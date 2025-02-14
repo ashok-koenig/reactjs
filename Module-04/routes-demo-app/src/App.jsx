@@ -9,17 +9,19 @@ import ListBlogs from './components/blogs/ListBlogs'
 import AddBlog from './components/blogs/AddBlog'
 import BlogPost from './components/blogs/BlogPost'
 import Payment from './components/Payment'
+import EffectDemo from './components/EffectDemo'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <NotFound />,
+    // errorElement: <NotFound />,
     children: [
       {index: true, element:<Home />},
       // {path: 'home', element: <Home />},
       {path: 'about', element: <About />},
       {path: 'payment', element: <Payment />},
+      {path: 'effect', element: <EffectDemo />},
       {
         path: 'blogs', 
         element: <Blogs />, 
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
         ]
       }
     ]
+  },
+  {
+    path: "*",
+    element: <NotFound />
   }
 ])
 

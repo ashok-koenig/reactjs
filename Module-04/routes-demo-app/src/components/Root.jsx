@@ -8,7 +8,8 @@ function Root() {
         <hr/>
         <Link to='/'>Home</Link> | 
         <Link to='/about'>About</Link> |
-        <Link to='/blogs'>Blogs</Link>
+        <Link to='/blogs'>Blogs</Link> |
+        <Link to='/effect'>useEffect Demo</Link>
         <hr/>
         <Outlet />
     </div>
