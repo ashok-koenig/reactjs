@@ -2,7 +2,7 @@ import React from 'react'
 import useFetch from '../hooks/useFetch'
 
 function BlogsList() {
-    const {data: blogsList, loading, error} = useFetch("http://localhost:3000/invalid")
+    const {data: blogsList, loading, error} = useFetch("http://localhost:3000/blogs")
 
  if(loading) return <p>Loading...</p>
     if(error) return <p>Error: {error}</p>
