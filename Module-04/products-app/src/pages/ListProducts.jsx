@@ -22,9 +22,30 @@ function ListProducts() {
         loadAllProducts()
     }, [])
 
-  return (
-    <div>ListProducts</div>
-  )
+    if(loading) return <h3>Products are loading...</h3>
+    if(error) return <h3>Error: {error}</h3>
+
+  return (<div>
+        <h2>List of Products</h2>
+        <table border={1} width={"100%"}>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    products.map((product)=><tr key={product.id}>
+                                                <td>{product.id}</td>
+                                                <td>{product.title}</td>
+                                                <td>{product.price}</td>
+                                            </tr>)
+                }
+            </tbody>
+        </table>
+    </div>)
 }
 
 export default ListProducts
