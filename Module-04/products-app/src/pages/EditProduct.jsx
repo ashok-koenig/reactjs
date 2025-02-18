@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useRef, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 
 function EditProduct() {
     const {id} = useParams()
@@ -8,6 +8,8 @@ function EditProduct() {
     const priceRef = useRef()
     const [error, setError] = useState(null)
     const [message, setMessage] = useState()
+
+    const navigate = useNavigate()
 
     // Used to fill the input field from the products api
     useEffect(()=>{
@@ -28,6 +30,7 @@ function EditProduct() {
             console.log(response.data)
             if(response.data.id){
                 setMessage("Product updated with id "+ response.data.id)
+                navigate("/")
             }
         }catch(err){
             setError(err.message)
