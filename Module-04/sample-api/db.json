@@ -5,5 +5,17 @@
             "title":"First Blog post",
             "content": "This is my first blog post content"
         }
+    ],
+    "products": [
+        {
+            "id":1,
+            "title": "HP Laptop",
+            "price": 56658
+        },
+        {
+            "id":2,
+            "title": "iPhone 16",
+            "price": 16777
+        }
     ]
 }
