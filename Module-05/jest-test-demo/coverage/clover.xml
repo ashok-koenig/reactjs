@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1740037148388" clover="3.2.0">
+  <project timestamp="1740037148388" name="All files">
+    <metrics statements="28" coveredstatements="26" conditionals="6" coveredconditionals="5" methods="10" coveredmethods="10" elements="44" coveredelements="41" complexity="0" loc="28" ncloc="28" packages="2" files="6" classes="6"/>
+    <package name="src">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="App.jsx" path="D:\ReactJS\210927-React-JS\Module-05\jest-test-demo\src\App.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="main.jsx" path="D:\ReactJS\210927-React-JS\Module-05\jest-test-demo\src\main.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="26" coveredstatements="25" conditionals="6" coveredconditionals="5" methods="9" coveredmethods="9"/>
+      <file name="Counter.jsx" path="D:\ReactJS\210927-React-JS\Module-05\jest-test-demo\src\components\Counter.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
+      <file name="Greeting.jsx" path="D:\ReactJS\210927-React-JS\Module-05\jest-test-demo\src\components\Greeting.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="ProductDetail.jsx" path="D:\ReactJS\210927-React-JS\Module-05\jest-test-demo\src\components\ProductDetail.jsx">
+        <metrics statements="14" coveredstatements="13" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="23" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="24" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="26" count="2" type="stmt"/>
+      </file>
+      <file name="RegisterForm.jsx" path="D:\ReactJS\210927-React-JS\Module-05\jest-test-demo\src\components\RegisterForm.jsx">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
